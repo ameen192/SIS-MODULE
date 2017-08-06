@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login page</title>
+	<link rel="stylesheet" type="text/css" href="{% static "marks/style.css"%}">
+</head>
+<body>
+<div class="logtitle">
+	<h1>Student Information System Module</h1>
+</div>
+
+	<div class="login_div">
+	<h2>Login</h2>
+	<form id="login_form" action="home/" method="POST">
+		<input class="uname" name="uname" placeholder="enter name" required>  <br> <span id="uname_span"></span> 
+		<input class="pass" type="password" name="password" placeholder="enter password" required><br><br>
+		<input id="login_sub" class="btn btn-primary" class="submit" type="submit" value="login">
+	</form>
+</div>
+</body>
+</html>
+
+
